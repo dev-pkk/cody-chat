@@ -1,1 +1,1 @@
-# cody-chat
+# Cody Chat App
