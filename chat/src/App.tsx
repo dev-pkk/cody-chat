@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 
 import { Loader } from "./Loader";
 import api from "./utils/api";
+import { v4 as uuid } from 'uuid';
 
 let cnvs: Conversation[] = [];
 
@@ -21,7 +22,7 @@ function App(): JSX.Element {
   // const send = async () => {
   //   setMessages((prev) => [
   //     {
-  //       id: Math.random().toString(),
+  //       id: uuid(),
   //       content: message,
   //       conversation_id: selectedConversation?.id,
   //       machine: false,
@@ -96,7 +97,7 @@ function App(): JSX.Element {
 
   const createMessage = (msg: string, machine: boolean): Message =>
     ({
-      id: Math.random().toString(),
+      id: uuid(),
       content: msg,
       conversation_id: selectedConversation?.id,
       machine: machine,
