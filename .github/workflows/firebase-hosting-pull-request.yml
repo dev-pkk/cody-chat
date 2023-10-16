@@ -15,3 +15,5 @@ jobs:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_PRIMESEVENTY_SINGSYS }}'
           projectId: primeseventy-singsys
+        env:
+          FIREBASE_CLI_EXPERIMENTS: webframeworks
