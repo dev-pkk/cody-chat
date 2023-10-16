@@ -1,0 +1,40 @@
+###
+GET https://getcody.ai/api/v1/bots
+Content-Type: application/json
+Authorization: Bearer epP3aMR0IexOVRObuBP7FUXx9jcl41qHsi1k8p6U
+
+###
+GET https://getcody.ai/api/v1/conversations
+Authorization: Bearer epP3aMR0IexOVRObuBP7FUXx9jcl41qHsi1k8p6U
+
+### 
+POST https://getcody.ai/api/v1/conversations
+Content-Type: application/json
+Authorization: Bearer epP3aMR0IexOVRObuBP7FUXx9jcl41qHsi1k8p6U
+
+{
+  "name": "Joks",
+  "bot_id": "VolejY615djN"
+}
+
+###
+GET https://getcody.ai/api/v1/conversations
+Authorization: Bearer epP3aMR0IexOVRObuBP7FUXx9jcl41qHsi1k8p6U
+
+###
+DELETE https://getcody.ai/api/v1/conversations/yMYermPRBdOB
+Authorization: Bearer epP3aMR0IexOVRObuBP7FUXx9jcl41qHsi1k8p6U
+
+###
+GET https://getcody.ai/api/v1/messages?conversation_id=kzPdy9ZrzdQr
+Authorization: Bearer epP3aMR0IexOVRObuBP7FUXx9jcl41qHsi1k8p6U
+
+###
+POST https://getcody.ai/api/v1/messages
+Content-Type: application/json
+Authorization: Bearer epP3aMR0IexOVRObuBP7FUXx9jcl41qHsi1k8p6U
+
+{
+  "content": "Hello",
+  "conversation_id": "kzPdy9ZrzdQr"
+}

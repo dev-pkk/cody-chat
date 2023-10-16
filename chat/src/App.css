@@ -1,0 +1,142 @@
+#root {
+  max-width: 1280px;
+}
+
+.header {
+  padding: 14px 14px 0px 14px;
+  margin: 0px;
+}
+
+input {
+  width: 30em;
+}
+
+button {
+  margin: 0.6em;
+}
+
+span {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
+
+p {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  color: grey;
+  margin-top: 0em;
+}
+
+.bots {
+  padding: 1em;
+}
+
+.fetch-bots {
+  display: flex;
+}
+
+.fetch-bots h1 {
+  font-size: 16px;
+  margin-right: 15px;
+}
+
+.get-bot-button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.2em 0.4em;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  height: 30px;
+  transition: none;
+}
+
+.bots-list {
+  border-radius: 1em;
+  border: 1px solid #646cff;
+  padding: 1em;
+}
+
+.last-child {
+  margin-bottom: 0px;
+}
+
+.select-btn {
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 1em;
+  font-size: 12px;
+  padding: 0.2em 0.4em;
+  border: 1px solid transparent;
+  color: #aeaede;
+}
+
+.select-btn:hover {
+  color: green;
+  border-color: green;
+}
+
+.selected {
+  padding-left: 1em;
+  color: green;
+}
+
+.conversation {
+  margin-left: 1em;
+  margin-right: 1em;
+  padding: 0.2em 0.4em;
+  border: 1px solid gray;
+  border-radius: 0.4em;
+  cursor: pointer;
+}
+.conversation:hover {
+  border-color: #646cff;
+}
+
+.conversation span {
+  padding-left: 0.4em;
+}
+
+.message {
+  margin: 1em;
+  padding: 0.6em 1em;
+  align-items: flex-end;
+  background-color: transparent;
+  border-radius: 1em;
+  transform: scaleY(-1);
+}
+
+.messages {
+  height: 55vh;
+  overflow: auto;
+  transform: scaleY(-1);
+}
+
+.machine {
+  background-color: #6969d16c;
+  align-items: flex-start;
+}
+
+.no-message {
+  margin: 1em;
+  font-size: 16px;
+  margin-top: 0px;
+  text-align: center;
+  padding-top: 25vh;
+  vertical-align: middle;
+  transform: scaleY(-1);
+}
+
+@media (prefers-color-scheme: light) {
+  span {
+    color: #424242;
+  }
+  .select-btn {
+    color: rgb(88, 88, 223)
+  }
+}
