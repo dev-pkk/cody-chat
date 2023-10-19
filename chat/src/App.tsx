@@ -229,7 +229,8 @@ function App(): JSX.Element {
               <h1 className="no-message">No message(s) found.</h1>
             ))}
         </div>
-        <div>
+        <div className="footer">
+          <div>
           {conversations.length > 0 &&
             conversations.map((value, index) => (
               <span
@@ -252,6 +253,7 @@ function App(): JSX.Element {
             value={message}
           />
           <button onClick={send}>SEND</button>
+        </div>
         </div>
         {loading && <Loader />}
       </div>

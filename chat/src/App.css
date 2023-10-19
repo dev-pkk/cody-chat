@@ -87,8 +87,8 @@ p {
 }
 
 .conversation {
-  margin-left: 1em;
-  margin-right: 1em;
+  display: inline-block;
+  margin: 0.6em;
   padding: 0.2em 0.4em;
   border: 1px solid gray;
   border-radius: 0.4em;
@@ -115,9 +115,11 @@ p {
   height: 55vh;
   overflow: auto;
   transform: scaleY(-1);
+  padding-top: 40px;
 }
 
 .machine {
+  display: inline-block;
   background-color: #6969d16c;
   align-items: flex-start;
 }
@@ -132,11 +134,25 @@ p {
   transform: scaleY(-1);
 }
 
+.footer {
+  position: relative;
+  padding: 10px 0;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: -40px;
+  height: 40px;
+  width: 100%;
+  background: linear-gradient(to top, #1e1e1e, transparent);
+}
+
 @media (prefers-color-scheme: light) {
   span {
     color: #424242;
   }
   .select-btn {
-    color: rgb(88, 88, 223)
+    color: rgb(88, 88, 223);
   }
 }
