@@ -56,11 +56,6 @@ input {
   background-color: #1a1a1a;
 }
 
-.form {
-  display: flex;
-  padding-right: 10px;
-}
-
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
