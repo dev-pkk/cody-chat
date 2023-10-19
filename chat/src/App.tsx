@@ -175,7 +175,8 @@ function App(): JSX.Element {
   return (
     <>
       <div>
-        <h1 className="header">Cody AI</h1>
+        <header className="main-header">
+          <h1 className="header">Cody AI</h1>
         <div className="bots">
           <div className="fetch-bots">
             <h1>Cody Bots</h1>{" "}
@@ -214,6 +215,7 @@ function App(): JSX.Element {
             <p>Fetching bots...</p>
           )}
         </div>
+        </header>
         <div className="messages">
           {selectedConversation &&
             (messages.length > 0 ? (
@@ -245,7 +247,7 @@ function App(): JSX.Element {
               </span>
             ))}
         </div>
-        <div>
+        <div className="form">
           <input
             type="text"
             placeholder="Send a message"
