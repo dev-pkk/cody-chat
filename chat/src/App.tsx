@@ -1,61 +1,26 @@
 import "./App.css";
 
-import { Bot, Conversation, Message } from "./types";
 import { useEffect, useState } from "react";
 
 import { Loader } from "./Loader";
+import { Message } from "./types";
 import api from "./utils/api";
 import { v4 as uuid } from 'uuid';
-
-let cnvs: Conversation[] = [];
 
 function App(): JSX.Element {
   const [loading, setLoading] = useState<boolean>(false);
   const [message, setMessage] = useState<string>("");
-  const [bots, setBots] = useState<Bot[]>([]);
-  const [selectedBot, setSelectedBot] = useState<Bot>();
-  const [conversations, setConversations] = useState<Conversation[]>([]);
-  const [selectedConversation, setSelectedConversation] =
-    useState<Conversation>();
   const [messages, setMessages] = useState<Message[]>([]);
 
-  // const send = async () => {
-  //   setMessages((prev) => [
-  //     {
-  //       id: uuid(),
-  //       content: message,
-  //       conversation_id: selectedConversation?.id,
-  //       machine: false,
-  //       failed_responding: false,
-  //       flagged: false,
-  //       created_at: 42,
-  //     } as Message,
-  //     ...prev,
-  //   ]);
-  //   const params = {
-  //     content: message,
-  //     conversation_id: selectedConversation?.id,
-  //   };
-  //   setMessage("");
-  //   setLoading(true);
-  //   try {
-  //     const response = await api.post("messages", params);
-  //     if (response.data.data != undefined) {
-  //       setMessages((prev) => [response.data.data as Message, ...prev]);
-  //     } else {
-  //       alert(response.data.message as string);
-  //     }
-  //   } catch (error) {
-  //     console.log("Error in get answer", error);
-  //   }
-  //   setLoading(false);
-  // };
+  useEffect(() => {
+    getMessages()
+  }, [])
 
   const send = async () => {
     setMessages((prev) => [createMessage(message, false), ...prev]);
     const params = {
       content: message,
-      conversation_id: selectedConversation?.id,
+      conversation_id: "k8mep2X7NbMy",
       redirect: false,
     };
     setMessage("");
@@ -68,7 +33,6 @@ function App(): JSX.Element {
           return msgs;
         });
         readStream(response.data.data.stream_url);
-        // setMessages((prev) => [response.data.data as Message, ...prev]);
       } else {
         alert(response.data.message as string);
       }
@@ -99,50 +63,18 @@ function App(): JSX.Element {
     ({
       id: uuid(),
       content: msg,
-      conversation_id: selectedConversation?.id,
+      conversation_id: "k8mep2X7NbMy",
       machine: machine,
       failed_responding: false,
       flagged: false,
       created_at: 42,
     } as Message);
 
-  const getBots = async () => {
-    try {
-      const response = await api.get("bots");
-      if (response.data?.data?.length ?? 0 > 0) {
-        setBots(response.data.data as Bot[]);
-      } else {
-        alert("No bots fount.");
-      }
-    } catch (error) {
-      console.log("Error in get bots", error);
-    }
-    setLoading(false);
-  };
-
-  useEffect(() => {
-    const getConversations = async () => {
-      setLoading(true);
-      try {
-        const response = await api.get("conversations");
-        if (response.data?.data?.length ?? 0 > 0) {
-          cnvs = response.data.data as Conversation[];
-          getBots();
-        } else {
-          alert("No conversations fount.");
-        }
-      } catch (error) {
-        console.log("Error in get bots", error);
-      }
-    };
-    getConversations();
-  }, []);
-
   const getMessages = async () => {
     setLoading(true);
     try {
       const response = await api.get(
-        `messages?conversation_id=${selectedConversation?.id}`
+        `messages?conversation_id=k8mep2X7NbMy`
       );
       if (response.data?.data?.length ?? 0 > 0) {
         setMessages(response.data.data as Message[]);
@@ -155,98 +87,23 @@ function App(): JSX.Element {
     setLoading(false);
   };
 
-  useEffect(() => {
-    if (selectedBot != null) {
-      const cnv = cnvs.filter((item) => item.bot_id == selectedBot.id);
-      if (cnv.length > 0) {
-        setConversations(cnv);
-        setSelectedConversation(cnv[0]);
-      } else {
-        alert("Selected bot don't have any conversation.");
-      }
-    }
-  }, [selectedBot]);
-
-  useEffect(() => {
-    getMessages();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [selectedConversation]);
-
   return (
-    <>
-      <div>
-        <header className="main-header">
-          <h1 className="header">Cody AI</h1>
-        <div className="bots">
-          <div className="fetch-bots">
-            <h1>Cody Bots</h1>{" "}
-            {/* <button className="get-bot-button" onClick={getBots}>
-              GET BOTS
-            </button> */}
-          </div>
-          {bots.length > 0 ? (
-            <div className="bots-list">
-              {bots.map((value, index) => (
-                <div key={index}>
-                  <span>
-                    {value.name}
-                    {selectedBot?.id === value.id ? (
-                      <span className="selected">✔</span>
-                    ) : (
-                      <a
-                        className="select-btn"
-                        onClick={() => setSelectedBot(value)}
-                      >
-                        SET
-                      </a>
-                    )}
-                  </span>
-                  <p
-                    className={
-                      index === bots.length - 1 ? "last-child" : undefined
-                    }
-                  >
-                    {value.description}
-                  </p>
-                </div>
-              ))}
-            </div>
-          ) : (
-            <p>Fetching bots...</p>
-          )}
-        </div>
-        </header>
-        <div className="messages">
-          {selectedConversation &&
-            (messages.length > 0 ? (
-              messages.map((msg, index) => (
-                <div
-                  className={msg.machine ? "machine message" : "user message"}
-                  key={index}
-                >
-                  <span>{msg.content}</span>
-                </div>
-              ))
-            ) : (
-              <h1 className="no-message">No message(s) found.</h1>
-            ))}
-        </div>
-        <div className="footer">
-          <div>
-          {conversations.length > 0 &&
-            conversations.map((value, index) => (
-              <span
-                className="conversation"
-                onClick={() => setSelectedConversation(value)}
+    <div>
+      <div className="messages">
+        {(messages.length > 0 ? (
+            messages.map((msg, index) => (
+              <div
+                className={msg.machine ? "machine message" : "user message"}
                 key={index}
               >
-                {value.name}
-                {selectedConversation?.id === value.id && (
-                  <span className="selected">✔</span>
-                )}
-              </span>
-            ))}
-        </div>
+                <span>{msg.content}</span>
+              </div>
+            ))
+          ) : (
+            <h1 className="no-message">No message(s) yet.</h1>
+          ))}
+      </div>
+      <div className="footer">
         <div className="form">
           <input
             type="text"
@@ -256,10 +113,9 @@ function App(): JSX.Element {
           />
           <button onClick={send}>SEND</button>
         </div>
-        </div>
-        {loading && <Loader />}
       </div>
-    </>
+      {loading && <Loader />}
+    </div>
   );
 }
 

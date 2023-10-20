@@ -13,8 +13,8 @@ Content-Type: application/json
 Authorization: Bearer epP3aMR0IexOVRObuBP7FUXx9jcl41qHsi1k8p6U
 
 {
-  "name": "Joks",
-  "bot_id": "VolejY615djN"
+  "name": "Knowledge",
+  "bot_id": "Wpmbk2X1XazJ"
 }
 
 ###
@@ -22,11 +22,11 @@ GET https://getcody.ai/api/v1/conversations
 Authorization: Bearer epP3aMR0IexOVRObuBP7FUXx9jcl41qHsi1k8p6U
 
 ###
-DELETE https://getcody.ai/api/v1/conversations/yMYermPRBdOB
+DELETE https://getcody.ai/api/v1/conversations/4y1aKLWznbQG
 Authorization: Bearer epP3aMR0IexOVRObuBP7FUXx9jcl41qHsi1k8p6U
 
 ###
-GET https://getcody.ai/api/v1/messages?conversation_id=kzPdy9ZrzdQr
+GET https://getcody.ai/api/v1/messages?conversation_id=k8mep2X7NbMy
 Authorization: Bearer epP3aMR0IexOVRObuBP7FUXx9jcl41qHsi1k8p6U
 
 ###
@@ -38,3 +38,32 @@ Authorization: Bearer epP3aMR0IexOVRObuBP7FUXx9jcl41qHsi1k8p6U
   "content": "Hello",
   "conversation_id": "kzPdy9ZrzdQr"
 }
+
+###
+POST https://getcody.ai/api/v1/folders
+Content-Type: application/json
+Authorization: Bearer epP3aMR0IexOVRObuBP7FUXx9jcl41qHsi1k8p6U
+
+{
+  "name": "Movies",
+}
+
+###
+GET https://getcody.ai/api/v1/folders
+Authorization: Bearer epP3aMR0IexOVRObuBP7FUXx9jcl41qHsi1k8p6U
+
+###
+POST https://getcody.ai/api/v1/documents
+Content-Type: application/json
+Authorization: Bearer epP3aMR0IexOVRObuBP7FUXx9jcl41qHsi1k8p6U
+
+{
+  "name": "Artists",
+  "folder_id": "4y1aKKNxaQGw",
+  "content": "[{\"id\":789,\"name\":\"SampleArtist1\",\"description\":\"DescriptionaboutSampleArtist1\"},{\"id\":790,\"name\":\"SampleArtist2\",\"description\":\"DescriptionaboutSampleArtist2\"},{\"id\":791,\"name\":\"SampleArtist3\",\"description\":\"DescriptionaboutSampleArtist3\"},{\"id\":792,\"name\":\"SampleArtist4\",\"description\":\"DescriptionaboutSampleArtist4\"},{\"id\":793,\"name\":\"SampleArtist5\",\"description\":\"DescriptionaboutSampleArtist5\"}]"
+}
+
+
+###
+GET https://getcody.ai/api/v1/documents
+Authorization: Bearer epP3aMR0IexOVRObuBP7FUXx9jcl41qHsi1k8p6U
