@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "source": "chat",
+    "source": "web",
     "ignore": [
       "firebase.json",
       "**/.*",

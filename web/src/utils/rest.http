@@ -22,7 +22,7 @@ GET https://getcody.ai/api/v1/conversations
 Authorization: Bearer epP3aMR0IexOVRObuBP7FUXx9jcl41qHsi1k8p6U
 
 ###
-DELETE https://getcody.ai/api/v1/conversations/4y1aKLWznbQG
+DELETE https://getcody.ai/api/v1/conversations/xYRdG8QEQeDz
 Authorization: Bearer epP3aMR0IexOVRObuBP7FUXx9jcl41qHsi1k8p6U
 
 ###
