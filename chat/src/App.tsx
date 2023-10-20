@@ -221,7 +221,7 @@ function App(): JSX.Element {
             (messages.length > 0 ? (
               messages.map((msg, index) => (
                 <div
-                  className={msg.machine ? "machine message" : "message"}
+                  className={msg.machine ? "machine message" : "user message"}
                   key={index}
                 >
                   <span>{msg.content}</span>

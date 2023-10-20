@@ -107,18 +107,27 @@ p {
 }
 
 .message {
-  display: inline-block;
   margin: 0.5em 1em;
-  padding: 0.6em 1em;
   align-items: flex-end;
-  background-color: #2b2b2b;
-  border-radius: 0.75em;
   transform: scaleY(-1);
 }
 
+.message span {
+  display: inline-block;
+  border-radius: 0.75em;
+  padding: 0.6em 1em;
+}
+
+.user span {
+  background-color: #2b2b2b;
+}
+
 .machine {
-  background-color: #6969d16c;
   align-items: flex-start;
+}
+
+.machine span {
+  background-color: #6969d16c;
 }
 
 .no-message {
