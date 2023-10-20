@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "cody_ai_logo.jpeg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,0 +1,833 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B19EB4A42AE22DB80072217B /* CodyChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19EB4A32AE22DB80072217B /* CodyChatApp.swift */; };
+		B19EB4A62AE22DB80072217B /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19EB4A52AE22DB80072217B /* PlayerView.swift */; };
+		B19EB4A82AE22DBA0072217B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B19EB4A72AE22DBA0072217B /* Assets.xcassets */; };
+		B19EB4AB2AE22DBA0072217B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B19EB4AA2AE22DBA0072217B /* Preview Assets.xcassets */; };
+		B19EB4B52AE22DBA0072217B /* CodyChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19EB4B42AE22DBA0072217B /* CodyChatTests.swift */; };
+		B19EB4BF2AE22DBA0072217B /* CodyChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19EB4BE2AE22DBA0072217B /* CodyChatUITests.swift */; };
+		B19EB4C12AE22DBA0072217B /* CodyChatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19EB4C02AE22DBA0072217B /* CodyChatUITestsLaunchTests.swift */; };
+		B19EB4D22AE230B50072217B /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19EB4D12AE230B50072217B /* API.swift */; };
+		B19EB4D62AE233010072217B /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19EB4D52AE233010072217B /* Constant.swift */; };
+		B19EB4D82AE25ABF0072217B /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19EB4D72AE25ABF0072217B /* WebService.swift */; };
+		B19EB4DB2AE273150072217B /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19EB4DA2AE273150072217B /* PlayerViewModel.swift */; };
+		B19EB4DD2AE27AF90072217B /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19EB4DC2AE27AF90072217B /* PlayerModel.swift */; };
+		B19EB4DF2AE27C180072217B /* PlayerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19EB4DE2AE27C180072217B /* PlayerRepository.swift */; };
+		B19EB4E12AE27C420072217B /* PlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19EB4E02AE27C420072217B /* PlayerService.swift */; };
+		B19EB4E32AE296510072217B /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19EB4E22AE296510072217B /* DetailsView.swift */; };
+		B19EB4E52AE2980D0072217B /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19EB4E42AE2980D0072217B /* AddView.swift */; };
+		B19EB4E72AE2A1360072217B /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19EB4E62AE2A1360072217B /* WebView.swift */; };
+		B19EB4E92AE2AC1A0072217B /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19EB4E82AE2AC1A0072217B /* DetailsViewModel.swift */; };
+		D90EB94C6345AB9DBF096D50 /* Pods_CodyChat_CodyChatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 373B37DA5BA147A145B7E9A6 /* Pods_CodyChat_CodyChatUITests.framework */; };
+		F6619CE1340CCEEC36C6490C /* Pods_CodyChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A5957DD1A1F8CDE048C8B5 /* Pods_CodyChatTests.framework */; };
+		FAA29F0DAE5AE60A0F87978B /* Pods_CodyChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EBDD26E48020AD466E720FD /* Pods_CodyChat.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B19EB4B12AE22DBA0072217B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B19EB4982AE22DB80072217B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B19EB49F2AE22DB80072217B;
+			remoteInfo = CodyChat;
+		};
+		B19EB4BB2AE22DBA0072217B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B19EB4982AE22DB80072217B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B19EB49F2AE22DB80072217B;
+			remoteInfo = CodyChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03A5957DD1A1F8CDE048C8B5 /* Pods_CodyChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodyChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04AD3DE12BF07D00EBAF474C /* Pods-CodyChat-CodyChatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodyChat-CodyChatUITests.release.xcconfig"; path = "Target Support Files/Pods-CodyChat-CodyChatUITests/Pods-CodyChat-CodyChatUITests.release.xcconfig"; sourceTree = "<group>"; };
+		18EAB59E0C9A1109D086DECA /* Pods-CodyChatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodyChatTests.release.xcconfig"; path = "Target Support Files/Pods-CodyChatTests/Pods-CodyChatTests.release.xcconfig"; sourceTree = "<group>"; };
+		1EE120E14AE5A36B60F49661 /* Pods-CodyChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodyChat.release.xcconfig"; path = "Target Support Files/Pods-CodyChat/Pods-CodyChat.release.xcconfig"; sourceTree = "<group>"; };
+		373B37DA5BA147A145B7E9A6 /* Pods_CodyChat_CodyChatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodyChat_CodyChatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FAB4E246C4F060A18D4B33F /* Pods-CodyChat-CodyChatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodyChat-CodyChatUITests.debug.xcconfig"; path = "Target Support Files/Pods-CodyChat-CodyChatUITests/Pods-CodyChat-CodyChatUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8CF6CE4B81D30A3FEFBDB9CB /* Pods-CodyChatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodyChatTests.debug.xcconfig"; path = "Target Support Files/Pods-CodyChatTests/Pods-CodyChatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9EBDD26E48020AD466E720FD /* Pods_CodyChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodyChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B19EB4A02AE22DB80072217B /* CodyChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodyChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B19EB4A32AE22DB80072217B /* CodyChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodyChatApp.swift; sourceTree = "<group>"; };
+		B19EB4A52AE22DB80072217B /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		B19EB4A72AE22DBA0072217B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B19EB4AA2AE22DBA0072217B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B19EB4B02AE22DBA0072217B /* CodyChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodyChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B19EB4B42AE22DBA0072217B /* CodyChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodyChatTests.swift; sourceTree = "<group>"; };
+		B19EB4BA2AE22DBA0072217B /* CodyChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodyChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B19EB4BE2AE22DBA0072217B /* CodyChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodyChatUITests.swift; sourceTree = "<group>"; };
+		B19EB4C02AE22DBA0072217B /* CodyChatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodyChatUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B19EB4D12AE230B50072217B /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		B19EB4D52AE233010072217B /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		B19EB4D72AE25ABF0072217B /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		B19EB4DA2AE273150072217B /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
+		B19EB4DC2AE27AF90072217B /* PlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerModel.swift; sourceTree = "<group>"; };
+		B19EB4DE2AE27C180072217B /* PlayerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerRepository.swift; sourceTree = "<group>"; };
+		B19EB4E02AE27C420072217B /* PlayerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerService.swift; sourceTree = "<group>"; };
+		B19EB4E22AE296510072217B /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		B19EB4E42AE2980D0072217B /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		B19EB4E62AE2A1360072217B /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		B19EB4E82AE2AC1A0072217B /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
+		EFEE1CC5ABFB07D875351B2C /* Pods-CodyChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodyChat.debug.xcconfig"; path = "Target Support Files/Pods-CodyChat/Pods-CodyChat.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B19EB49D2AE22DB80072217B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA29F0DAE5AE60A0F87978B /* Pods_CodyChat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B19EB4AD2AE22DBA0072217B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6619CE1340CCEEC36C6490C /* Pods_CodyChatTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B19EB4B72AE22DBA0072217B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D90EB94C6345AB9DBF096D50 /* Pods_CodyChat_CodyChatUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		48DF5667A4031E1DAEB9C9B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EFEE1CC5ABFB07D875351B2C /* Pods-CodyChat.debug.xcconfig */,
+				1EE120E14AE5A36B60F49661 /* Pods-CodyChat.release.xcconfig */,
+				3FAB4E246C4F060A18D4B33F /* Pods-CodyChat-CodyChatUITests.debug.xcconfig */,
+				04AD3DE12BF07D00EBAF474C /* Pods-CodyChat-CodyChatUITests.release.xcconfig */,
+				8CF6CE4B81D30A3FEFBDB9CB /* Pods-CodyChatTests.debug.xcconfig */,
+				18EAB59E0C9A1109D086DECA /* Pods-CodyChatTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B19EB4972AE22DB80072217B = {
+			isa = PBXGroup;
+			children = (
+				B19EB4A22AE22DB80072217B /* CodyChat */,
+				B19EB4B32AE22DBA0072217B /* CodyChatTests */,
+				B19EB4BD2AE22DBA0072217B /* CodyChatUITests */,
+				B19EB4A12AE22DB80072217B /* Products */,
+				48DF5667A4031E1DAEB9C9B4 /* Pods */,
+				D90F4A21844DDC5A9312183F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B19EB4A12AE22DB80072217B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B19EB4A02AE22DB80072217B /* CodyChat.app */,
+				B19EB4B02AE22DBA0072217B /* CodyChatTests.xctest */,
+				B19EB4BA2AE22DBA0072217B /* CodyChatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B19EB4A22AE22DB80072217B /* CodyChat */ = {
+			isa = PBXGroup;
+			children = (
+				B19EB4D42AE232B10072217B /* Utils */,
+				B19EB4D32AE2323E0072217B /* Repositories */,
+				B19EB4D02AE2307B0072217B /* Services */,
+				B19EB4CF2AE230530072217B /* ViewModel */,
+				B19EB4CE2AE230420072217B /* View */,
+				B19EB4CD2AE2301C0072217B /* Model */,
+				B19EB4A32AE22DB80072217B /* CodyChatApp.swift */,
+				B19EB4A72AE22DBA0072217B /* Assets.xcassets */,
+				B19EB4A92AE22DBA0072217B /* Preview Content */,
+			);
+			path = CodyChat;
+			sourceTree = "<group>";
+		};
+		B19EB4A92AE22DBA0072217B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B19EB4AA2AE22DBA0072217B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B19EB4B32AE22DBA0072217B /* CodyChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				B19EB4B42AE22DBA0072217B /* CodyChatTests.swift */,
+			);
+			path = CodyChatTests;
+			sourceTree = "<group>";
+		};
+		B19EB4BD2AE22DBA0072217B /* CodyChatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B19EB4BE2AE22DBA0072217B /* CodyChatUITests.swift */,
+				B19EB4C02AE22DBA0072217B /* CodyChatUITestsLaunchTests.swift */,
+			);
+			path = CodyChatUITests;
+			sourceTree = "<group>";
+		};
+		B19EB4CD2AE2301C0072217B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B19EB4DC2AE27AF90072217B /* PlayerModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B19EB4CE2AE230420072217B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B19EB4A52AE22DB80072217B /* PlayerView.swift */,
+				B19EB4E22AE296510072217B /* DetailsView.swift */,
+				B19EB4E42AE2980D0072217B /* AddView.swift */,
+				B19EB4E62AE2A1360072217B /* WebView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B19EB4CF2AE230530072217B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B19EB4DA2AE273150072217B /* PlayerViewModel.swift */,
+				B19EB4E82AE2AC1A0072217B /* DetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B19EB4D02AE2307B0072217B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B19EB4E02AE27C420072217B /* PlayerService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B19EB4D32AE2323E0072217B /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				B19EB4DE2AE27C180072217B /* PlayerRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		B19EB4D42AE232B10072217B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B19EB4D12AE230B50072217B /* API.swift */,
+				B19EB4D52AE233010072217B /* Constant.swift */,
+				B19EB4D72AE25ABF0072217B /* WebService.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D90F4A21844DDC5A9312183F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9EBDD26E48020AD466E720FD /* Pods_CodyChat.framework */,
+				373B37DA5BA147A145B7E9A6 /* Pods_CodyChat_CodyChatUITests.framework */,
+				03A5957DD1A1F8CDE048C8B5 /* Pods_CodyChatTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B19EB49F2AE22DB80072217B /* CodyChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B19EB4C42AE22DBA0072217B /* Build configuration list for PBXNativeTarget "CodyChat" */;
+			buildPhases = (
+				C1011DCB3CF49275C351CCAD /* [CP] Check Pods Manifest.lock */,
+				B19EB49C2AE22DB80072217B /* Sources */,
+				B19EB49D2AE22DB80072217B /* Frameworks */,
+				B19EB49E2AE22DB80072217B /* Resources */,
+				79853F0884EC6295867A4139 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CodyChat;
+			productName = CodyChat;
+			productReference = B19EB4A02AE22DB80072217B /* CodyChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B19EB4AF2AE22DBA0072217B /* CodyChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B19EB4C72AE22DBA0072217B /* Build configuration list for PBXNativeTarget "CodyChatTests" */;
+			buildPhases = (
+				41BD112196B13D6E42354E86 /* [CP] Check Pods Manifest.lock */,
+				B19EB4AC2AE22DBA0072217B /* Sources */,
+				B19EB4AD2AE22DBA0072217B /* Frameworks */,
+				B19EB4AE2AE22DBA0072217B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B19EB4B22AE22DBA0072217B /* PBXTargetDependency */,
+			);
+			name = CodyChatTests;
+			productName = CodyChatTests;
+			productReference = B19EB4B02AE22DBA0072217B /* CodyChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B19EB4B92AE22DBA0072217B /* CodyChatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B19EB4CA2AE22DBA0072217B /* Build configuration list for PBXNativeTarget "CodyChatUITests" */;
+			buildPhases = (
+				6C442C6B981BCA5A9435040F /* [CP] Check Pods Manifest.lock */,
+				B19EB4B62AE22DBA0072217B /* Sources */,
+				B19EB4B72AE22DBA0072217B /* Frameworks */,
+				B19EB4B82AE22DBA0072217B /* Resources */,
+				D8826503FEF81A58E1FD4326 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B19EB4BC2AE22DBA0072217B /* PBXTargetDependency */,
+			);
+			name = CodyChatUITests;
+			productName = CodyChatUITests;
+			productReference = B19EB4BA2AE22DBA0072217B /* CodyChatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B19EB4982AE22DB80072217B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					B19EB49F2AE22DB80072217B = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					B19EB4AF2AE22DBA0072217B = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = B19EB49F2AE22DB80072217B;
+					};
+					B19EB4B92AE22DBA0072217B = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = B19EB49F2AE22DB80072217B;
+					};
+				};
+			};
+			buildConfigurationList = B19EB49B2AE22DB80072217B /* Build configuration list for PBXProject "CodyChat" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B19EB4972AE22DB80072217B;
+			productRefGroup = B19EB4A12AE22DB80072217B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B19EB49F2AE22DB80072217B /* CodyChat */,
+				B19EB4AF2AE22DBA0072217B /* CodyChatTests */,
+				B19EB4B92AE22DBA0072217B /* CodyChatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B19EB49E2AE22DB80072217B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B19EB4AB2AE22DBA0072217B /* Preview Assets.xcassets in Resources */,
+				B19EB4A82AE22DBA0072217B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B19EB4AE2AE22DBA0072217B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B19EB4B82AE22DBA0072217B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		41BD112196B13D6E42354E86 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CodyChatTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C442C6B981BCA5A9435040F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CodyChat-CodyChatUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79853F0884EC6295867A4139 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CodyChat/Pods-CodyChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CodyChat/Pods-CodyChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CodyChat/Pods-CodyChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1011DCB3CF49275C351CCAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CodyChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8826503FEF81A58E1FD4326 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CodyChat-CodyChatUITests/Pods-CodyChat-CodyChatUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CodyChat-CodyChatUITests/Pods-CodyChat-CodyChatUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CodyChat-CodyChatUITests/Pods-CodyChat-CodyChatUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B19EB49C2AE22DB80072217B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B19EB4A62AE22DB80072217B /* PlayerView.swift in Sources */,
+				B19EB4E32AE296510072217B /* DetailsView.swift in Sources */,
+				B19EB4D22AE230B50072217B /* API.swift in Sources */,
+				B19EB4A42AE22DB80072217B /* CodyChatApp.swift in Sources */,
+				B19EB4D82AE25ABF0072217B /* WebService.swift in Sources */,
+				B19EB4D62AE233010072217B /* Constant.swift in Sources */,
+				B19EB4E92AE2AC1A0072217B /* DetailsViewModel.swift in Sources */,
+				B19EB4E52AE2980D0072217B /* AddView.swift in Sources */,
+				B19EB4DB2AE273150072217B /* PlayerViewModel.swift in Sources */,
+				B19EB4E12AE27C420072217B /* PlayerService.swift in Sources */,
+				B19EB4E72AE2A1360072217B /* WebView.swift in Sources */,
+				B19EB4DF2AE27C180072217B /* PlayerRepository.swift in Sources */,
+				B19EB4DD2AE27AF90072217B /* PlayerModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B19EB4AC2AE22DBA0072217B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B19EB4B52AE22DBA0072217B /* CodyChatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B19EB4B62AE22DBA0072217B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B19EB4C12AE22DBA0072217B /* CodyChatUITestsLaunchTests.swift in Sources */,
+				B19EB4BF2AE22DBA0072217B /* CodyChatUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B19EB4B22AE22DBA0072217B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B19EB49F2AE22DB80072217B /* CodyChat */;
+			targetProxy = B19EB4B12AE22DBA0072217B /* PBXContainerItemProxy */;
+		};
+		B19EB4BC2AE22DBA0072217B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B19EB49F2AE22DB80072217B /* CodyChat */;
+			targetProxy = B19EB4BB2AE22DBA0072217B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B19EB4C22AE22DBA0072217B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B19EB4C32AE22DBA0072217B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B19EB4C52AE22DBA0072217B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFEE1CC5ABFB07D875351B2C /* Pods-CodyChat.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CodyChat/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.everynation.CodyChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B19EB4C62AE22DBA0072217B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EE120E14AE5A36B60F49661 /* Pods-CodyChat.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CodyChat/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.everynation.CodyChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B19EB4C82AE22DBA0072217B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CF6CE4B81D30A3FEFBDB9CB /* Pods-CodyChatTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.everynation.CodyChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodyChat.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CodyChat";
+			};
+			name = Debug;
+		};
+		B19EB4C92AE22DBA0072217B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18EAB59E0C9A1109D086DECA /* Pods-CodyChatTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.everynation.CodyChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodyChat.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CodyChat";
+			};
+			name = Release;
+		};
+		B19EB4CB2AE22DBA0072217B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FAB4E246C4F060A18D4B33F /* Pods-CodyChat-CodyChatUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.everynation.CodyChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CodyChat;
+			};
+			name = Debug;
+		};
+		B19EB4CC2AE22DBA0072217B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04AD3DE12BF07D00EBAF474C /* Pods-CodyChat-CodyChatUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.everynation.CodyChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CodyChat;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B19EB49B2AE22DB80072217B /* Build configuration list for PBXProject "CodyChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B19EB4C22AE22DBA0072217B /* Debug */,
+				B19EB4C32AE22DBA0072217B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B19EB4C42AE22DBA0072217B /* Build configuration list for PBXNativeTarget "CodyChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B19EB4C52AE22DBA0072217B /* Debug */,
+				B19EB4C62AE22DBA0072217B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B19EB4C72AE22DBA0072217B /* Build configuration list for PBXNativeTarget "CodyChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B19EB4C82AE22DBA0072217B /* Debug */,
+				B19EB4C92AE22DBA0072217B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B19EB4CA2AE22DBA0072217B /* Build configuration list for PBXNativeTarget "CodyChatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B19EB4CB2AE22DBA0072217B /* Debug */,
+				B19EB4CC2AE22DBA0072217B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B19EB4982AE22DB80072217B /* Project object */;
+}

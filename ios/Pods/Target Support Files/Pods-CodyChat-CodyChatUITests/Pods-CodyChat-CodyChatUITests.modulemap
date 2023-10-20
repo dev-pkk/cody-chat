@@ -1,0 +1,6 @@
+framework module Pods_CodyChat_CodyChatUITests {
+  umbrella header "Pods-CodyChat-CodyChatUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
